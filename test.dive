@@ -1,0 +1,27 @@
+{- Dive サンプルプログラム -}
+
+printn x = { print x; print "\n" };
+
+print "hello, world.\n";
+
+fact n =
+  if n == 0 then 1
+  else n * fact (n - 1);
+
+printn (fact 5);
+
+fold f a lis =
+  match lis {
+    [] -> a;
+    x:xs -> fold f (f a x) xs;
+  };
+
+-- テスト用リスト
+test = [1,2,3,4,5,6,7,8,9,10];
+
+-- value restriction は無い。
+sum = fold (+) 0;
+rev = fold (fun x y -> y:x) [];
+
+printn (sum test);
+printn (rev test);
