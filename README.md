@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/lambdataro/Dive.svg?branch=master)](https://travis-ci.org/lambdataro/Dive)
+
 # プログラミング言語Dive
 研究室の新入生向けゼミで扱ったHaskellでの簡単な関数型言語の実装例．
 
